@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Mens wear</title>
 </head>
 <body>
@@ -56,7 +57,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 100</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', 's100', '1', '', 'Images/beuty/bb1.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -67,7 +70,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 500</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', '500', '1', '', 'Images/beuty/bb3.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -78,7 +83,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 500</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', '500', '1', '', 'Images/beuty/bb3.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -89,7 +96,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 600</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', '500', '1', '', 'Images/beuty/bb3.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -100,7 +109,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 2000</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', '500', '1', '', 'Images/beuty/bb3.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -111,7 +122,9 @@
           <div class="card-body ">
             <p class="font-weight-bold m-0">Makeup kit</p>
             <p class="">RS 600</p>
-            <div class="btn btn-dark">Buy</div>
+            <a href="delivery.html">
+              <div class="btn btn-dark" onclick="buyProduct('Makeup kit', '500', '1', '', 'Images/beuty/bb3.jpg')">Buy</div>
+            </a>
           </div>
         </div>
       </div>
@@ -119,7 +132,18 @@
     </div>
   </div>
 
+  <script>
 
+    function buyProduct(name, price, quant, size, img) {
+      confirm("Do you want to buy " + name);
+      sessionStorage.setItem("pName", name)
+      sessionStorage.setItem("pDesc", "Nice Denim shirst")
+      sessionStorage.setItem("price", price)
+      sessionStorage.setItem("quantity", quant)
+      sessionStorage.setItem("size", size)
+      sessionStorage.setItem("img", img)
+    }
+  </script>
 
 
 
