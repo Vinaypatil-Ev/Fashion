@@ -224,7 +224,7 @@
         document.getElementById("addField").style.color = "red"
       }
       else if (!document.getElementById("no").value) {
-        toast("please enter Name");
+        toast("please enter Mobile");
         document.getElementById("no").focus();
       }
       else if (!document.getElementById("email").value) {
@@ -232,7 +232,7 @@
         document.getElementById("email").focus();
       }
       else if (!validateEmail(document.getElementById("email").value)) {
-          toast("please enter correct Mail add");
+          toast("please enter correct Mail address");
           document.getElementById("email").focus();
       }
       else if (!document.getElementById("add").value) {
